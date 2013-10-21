@@ -1,8 +1,9 @@
-package net.pawel.drawing
+package net.pawel.drawing.tools
 
 import scala.collection.immutable.{TreeSet, TreeMap}
 import scala.collection.SortedMap
-import net.pawel.drawing.Pixel.Colour
+import scala.Some
+import net.pawel.drawing.tools.Pixel.Colour
 
 case class Canvas(width: Int,
                   height: Int,
@@ -10,11 +11,13 @@ case class Canvas(width: Int,
                   private val drawings: Vector[Drawing] = Vector.empty[Drawing],
                   private val pixels: SortedMap[Point, Colour] = TreeMap.empty) {
 
-  def query(point: Point): Option[Colour] = {
-    val pointIsOutOfCanvas = point.x < 1 || point.y < 1 || point.x > width || point.y > height
-    
-    if (pointIsOutOfCanvas) None
-    else pixels.get(point).orElse(Some(emptyColour))
+  def query(point: Point): Option[Colour] =
+    pixels.get(point)
+      .orElse(Some(emptyColour))
+      .filterNot(_ => isOutOfCanvas(point))
+
+  def isOutOfCanvas(point: Point): Boolean = {
+    point.x < 1 || point.y < 1 || point.x > width || point.y > height
   }
 
   def query(x: Int, y: Int): Option[Colour] = query(Point(x, y))

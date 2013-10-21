@@ -94,4 +94,59 @@ enter command: B 1 4 l
 |oooluuu|
 ---------
 
+enter command: C 7 7
+---------
+|       |
+|       |
+|       |
+|       |
+|       |
+|       |
+|       |
+---------
+
+enter command: R 1 1 3 3
+---------
+|xxx    |
+|x x    |
+|xxx    |
+|       |
+|       |
+|       |
+|       |
+---------
+
+enter command: L 1 6 6 6
+---------
+|xxx    |
+|x x    |
+|xxx    |
+|       |
+|       |
+|xxxxxx |
+|       |
+---------
+
+enter command: L 6 6 6 2
+---------
+|xxx    |
+|x x  x |
+|xxx  x |
+|     x |
+|     x |
+|xxxxxx |
+|       |
+---------
+
+enter command: B 1 4 o
+---------
+|xxxoooo|
+|x xooxo|
+|xxxooxo|
+|oooooxo|
+|oooooxo|
+|xxxxxxo|
+|ooooooo|
+---------
+
 enter command: Q

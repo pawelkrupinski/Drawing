@@ -2,7 +2,9 @@ package net.pawel.drawing
 
 import org.specs2.matcher.JUnitMustMatchers
 import org.junit.Test
-import net.pawel.drawing.Pixel.Colour
+import net.pawel.drawing.tools._
+import Pixel.Colour
+import net.pawel.drawing.tools.Canvas
 
 class FillTest extends JUnitMustMatchers {
 

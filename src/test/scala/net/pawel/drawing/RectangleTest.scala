@@ -3,6 +3,7 @@ package net.pawel.drawing
 import org.specs2.matcher.JUnitMustMatchers
 import org.junit.Test
 import scala.collection.immutable.TreeSet
+import net.pawel.drawing.tools.{PrintCanvas, Rectangle, Canvas}
 
 class RectangleTest extends JUnitMustMatchers {
 

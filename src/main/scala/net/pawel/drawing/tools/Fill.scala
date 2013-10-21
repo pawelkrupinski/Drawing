@@ -1,7 +1,8 @@
-package net.pawel.drawing
+package net.pawel.drawing.tools
 
-import net.pawel.drawing.Pixel.Colour
 import scala.collection.immutable.Queue
+import scala.Some
+import net.pawel.drawing.tools.Pixel.Colour
 
 case class Fill(point: Point, colour: Colour) extends Drawing {
 

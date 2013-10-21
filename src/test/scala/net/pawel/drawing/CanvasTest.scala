@@ -2,6 +2,7 @@ package net.pawel.drawing
 
 import org.specs2.matcher.JUnitMustMatchers
 import org.junit.Test
+import net.pawel.drawing.tools.{PrintCanvas, Line, Canvas}
 
 class CanvasTest extends JUnitMustMatchers {
 

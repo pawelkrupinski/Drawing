@@ -1,4 +1,4 @@
-package net.pawel.drawing
+package net.pawel.drawing.tools
 
 object PrintCanvas {
   def apply(canvas: Canvas) = {

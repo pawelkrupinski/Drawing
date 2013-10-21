@@ -2,6 +2,10 @@ package net.pawel.drawing
 
 import org.specs2.matcher.JUnitMustMatchers
 import org.junit.Test
+import net.pawel.drawing.tools._
+import net.pawel.drawing.tools.Canvas
+import net.pawel.drawing.tools.Point
+import scala.Some
 
 class LineTest extends JUnitMustMatchers {
 

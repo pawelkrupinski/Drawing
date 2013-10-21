@@ -8,7 +8,7 @@ scalaVersion := "2.10.2"
 
 test in assembly := {}
 
-mainClass in assembly := Some("net.pawel.drawing.commandLine.DrawingApplication")
+mainClass in assembly := Some("net.pawel.drawing.Main")
 
 libraryDependencies += "junit" % "junit" % "4.11" % "test" withSources()
 

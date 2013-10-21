@@ -1,6 +1,6 @@
-package net.pawel.drawing
+package net.pawel.drawing.tools
 
-import net.pawel.drawing.Pixel.Colour
+import net.pawel.drawing.tools.Pixel.Colour
 
 object Line {
   val Colour = 'x'
