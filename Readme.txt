@@ -5,7 +5,13 @@ in src/test/resources/scenarios and EndToEndTest class
 
 This project is compatible with sbt 0.12.0, which is also bundled with it.
 
-To build a runnable jar, run in the main directory:
+To generate IntelliJ project files, run in the main project directory:
+./sbt gen-idea
+
+To generate Eclipse project files:
+./sbt eclipse
+
+To build a runnable jar:
 ./sbt assembly
 
 Then to run:
