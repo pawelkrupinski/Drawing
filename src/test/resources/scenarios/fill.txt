@@ -14,83 +14,84 @@ Errors found when parsing the parameters:
 This parameter is not an integer: a
 
 enter command: B 1 a o
-Errors found when parsing the parameters:
+Errors found when parsing the parameters: 
 This parameter is not an integer: a
 
 enter command: B a 1 oo
-Errors found when parsing the parameters:
+Errors found when parsing the parameters: 
 This parameter is not an integer: a
+Expected single character as colour, got oo
 
 enter command: B a b xx
-Errors found when parsing the parameters:
+Errors found when parsing the parameters: 
 This parameter is not an integer: a
+This parameter is not an integer: b
+Expected single character as colour, got xx
 
 enter command: B 1 1 o
 ---------
-|xxxxxxx|
-|x     x|
-|x     x|
-|x     x|
-|x     x|
-|x     x|
-|xxxxxxx|
+|ooooooo|
+|ooooooo|
+|ooooooo|
+|ooooooo|
+|ooooooo|
+|ooooooo|
+|ooooooo|
 ---------
 
 enter command: L 4 1 4 7
 ---------
-|xxxxxxx|
-|x     x|
-|x xxx x|
-|x x x x|
-|x xxx x|
-|x     x|
-|xxxxxxx|
+|oooxooo|
+|oooxooo|
+|oooxooo|
+|oooxooo|
+|oooxooo|
+|oooxooo|
+|oooxooo|
 ---------
 
 enter command: B 6 2 /
 ---------
-|xxxxxxx|
-|x     x|
-|x xxx x|
-|xxxxx x|
-|x xxx x|
-|xxxx  x|
-|xxxxxxx|
+|ooox///|
+|ooox///|
+|ooox///|
+|ooox///|
+|ooox///|
+|ooox///|
+|ooox///|
 ---------
 
 enter command: L 1 4 7 4
 ---------
+|ooox///|
+|ooox///|
+|ooox///|
 |xxxxxxx|
-|x     x|
-|x xxx x|
-|xxxxx x|
-|x xxx x|
-|xxxx  x|
-|xxxxxxx|
+|ooox///|
+|ooox///|
+|ooox///|
 ---------
 
 enter command: B 6 6 u
 ---------
+|ooox///|
+|ooox///|
+|ooox///|
 |xxxxxxx|
-|x     x|
-|x xxx x|
-|xxxxx x|
-|x xxx x|
-|xxxx  x|
-|xxxxxxx|
+|oooxuuu|
+|oooxuuu|
+|oooxuuu|
 ---------
 
 enter command: B 1 4 l
 ---------
-|xxxxxxx|
-|x     x|
-|x xxx x|
-|xxxxx x|
-|x xxx x|
-|xxxx  x|
-|xxxxxxx|
+|oool///|
+|oool///|
+|oool///|
+|lllllll|
+|oooluuu|
+|oooluuu|
+|oooluuu|
 ---------
-
-
 
 enter command: Q
