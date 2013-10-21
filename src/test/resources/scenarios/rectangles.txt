@@ -1,0 +1,61 @@
+enter command: C 7 7
+---------
+|       |
+|       |
+|       |
+|       |
+|       |
+|       |
+|       |
+---------
+
+enter command: R a 1 1 1
+Errors found when parsing the parameters: 
+This parameter is not an integer: a
+
+enter command: R 1 a 1 1
+Errors found when parsing the parameters: 
+This parameter is not an integer: a
+
+enter command: R 1 1 a 1
+Errors found when parsing the parameters: 
+This parameter is not an integer: a
+
+enter command: R 1 1 1 a
+Errors found when parsing the parameters: 
+This parameter is not an integer: a
+
+enter command: R 1 1 7 7
+---------
+|xxxxxxx|
+|x     x|
+|x     x|
+|x     x|
+|x     x|
+|x     x|
+|xxxxxxx|
+---------
+
+enter command: R 3 3 5 5
+---------
+|xxxxxxx|
+|x     x|
+|x xxx x|
+|x x x x|
+|x xxx x|
+|x     x|
+|xxxxxxx|
+---------
+
+enter command: R 1 6 4 4
+---------
+|xxxxxxx|
+|x     x|
+|x xxx x|
+|xxxxx x|
+|x xxx x|
+|xxxx  x|
+|xxxxxxx|
+---------
+
+enter command: Q
