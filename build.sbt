@@ -2,13 +2,15 @@ import AssemblyKeys._
 
 assemblySettings
 
-name := "Drawing-Springer"
+name := "Drawing"
 
 scalaVersion := "2.10.2"
 
 test in assembly := {}
 
 mainClass in assembly := Some("net.pawel.drawing.Main")
+
+jarName in assembly := "Drawing.jar"
 
 libraryDependencies += "junit" % "junit" % "4.11" % "test" withSources()
 
